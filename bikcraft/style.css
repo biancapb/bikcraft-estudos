@@ -21,6 +21,7 @@ body {
 }
 
 h1,
+h2,
 a,
 p,
 span {
@@ -44,10 +45,72 @@ p {
   place-content: center;
   padding: 20px;
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
   gap: 20px;
   justify-content: center;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.detalhe {
+  background: #ee2211;
+  position: relative;
+  top: 40px;
+  padding: 2px;
+  margin-left: 48%;
+  margin-right: 48%;
+  z-index: 2;
+}
+
+.texto {
+  background: #fff;
+  padding: 20px;
+  text-align: right;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: end;
+}
+
+.imagem {
+  max-height: 370px;
+  grid-column: 2 / -1;
+}
+
+.botao {
+  background: #ee2211;
+  color: #fff;
+  height: max-content;
+  width: max-content;
+}
+
+.vantagens {
+  margin: 150px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #c6c6c6;
+  text-align: right;
+}
+
+.descricao {
+  margin: 0;
+  background: #fff;
+  padding: 20px;
+}
+
+.tituloicone {
+  display: flex;
+  gap: 15px;
+}
+
+.rodape {
+  display: flex;
 }
